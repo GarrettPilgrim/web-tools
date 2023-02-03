@@ -6,8 +6,8 @@ export default function CardGrid({ props }) {
     <div className={styles.productgrid}>
       <h2>Products</h2>
       <section id="products">
-        {props.map(({ id, image, name, alt }) => (
-          <Card key={id} name={name} image={image} alt={alt} id={id} />
+        {props.map(({ id, image, name, alt, description }) => (
+          <Card key={id} name={name} image={image} alt={alt} id={id} description={description} />
         ))}
       </section>
     </div>
