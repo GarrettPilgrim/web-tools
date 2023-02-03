@@ -1,0 +1,45 @@
+@use "./base.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  line-height: 150%;
+  font-family: base.$heading-font;
+  max-width: 80ch;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: base.$paragraph-font;
+  font-family: base.$body-font;
+}
+
+a {
+  text-decoration: none;
+}
