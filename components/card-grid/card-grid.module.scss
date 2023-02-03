@@ -1,0 +1,19 @@
+.productgrid {
+  margin: 5rem 0;
+  padding: 1rem;
+
+  section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .productgrid {
+    section {
+      grid-template-columns: 1fr;
+    }
+  }
+}
